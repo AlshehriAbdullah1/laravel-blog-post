@@ -14,11 +14,17 @@ class Post extends Model
       protected $guarded = [] ;
 
     protected $with = ['category','author'];
+    public function comments()
+    {
+      return $this->hasMany(Comment::class);
+    }
     public function author()
     {
       return $this->belongsTo(User::class,'user_id');
     }
     public function scopeFilter($query,array $filters){
+      // dd($filters);
+      // dd($query);
       $query
         ->when($filters['search']?? false,fn($query,$search)=>$query->where(fn($query)
         =>$query

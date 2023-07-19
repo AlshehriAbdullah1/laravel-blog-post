@@ -8,7 +8,7 @@ class SessionsController extends Controller
 {   
     //
 
-
+    
     public function create(){
         
         auth()->logout();
@@ -21,6 +21,13 @@ class SessionsController extends Controller
 
         return redirect('/')->with('success','goodbye!');
     }
+
+
+
+
+
+
+    #login
     public function store(){
         
         #attempt to authenticate the log in the user based on give credintals , 
