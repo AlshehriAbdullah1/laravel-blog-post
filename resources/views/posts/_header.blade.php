@@ -1,11 +1,10 @@
 <header class="max-w-xl mx-auto mt-20 text-center">
     <h1 class="text-4xl">
-        Latest <span class="text-blue-500">Laravel From Scratch</span> News
+        Latest Shared <span class="text-blue-500">Blog Posts!</span> 
     </h1>
 
     <p class="text-sm mt-14">
-        Another year. Another update. We're refreshing the popular Laravel series with new content.
-        I'm going to keep you guys up to speed with what's going on!
+        Go Ahead! share anything you want to, I will look at it as soon as possible. P.S , I never leave any post without a comment, so be prepared! 
     </p>
 
     <div class="space-y-2 lg:space-y-0 lg:space-x-4 mt-4">
