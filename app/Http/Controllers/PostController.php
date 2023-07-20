@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers;
 use App\Models\Post;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Validation\Rule;
 
 class PostController extends Controller
 {
     //
     public function index(){    
+
+        //dd(Gate::allows('admin'));
+
             return view('posts.index',[
         'posts'=>Post::latest()->filter(request(['search','category','author']))->paginate(6)->withQueryString()
        
